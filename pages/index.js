@@ -75,8 +75,6 @@ export default function Home() {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Fira+Sans&display=optional"
         ></link>
-
-        <script src="/js/progressBar.js"></script>
       </Head>
       <div className="custom-nav fixed top-0 left-0 flex justify-between items-center w-full z-10 p-[10%] py-4 text-[#eff6ee]">
         <Link href="/" className="font-semibold text-[#fff]">
