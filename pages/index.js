@@ -7,6 +7,7 @@ import "@splidejs/react-splide/css";
 import Project from "../components/Project";
 import { projects } from "../data/data";
 import Technologies from "../components/Technologies";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -69,22 +70,26 @@ export default function Home() {
         <title>James V.</title>
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Fira+Sans"
+          href="https://fonts.googleapis.com/css?family=Fira+Sans&display=optional"
         ></link>
         <script
           src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
           integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
+          async
         ></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-        <script src="/js/progressBar.js"></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+          async
+        ></script>
+        <script src="/js/progressBar.js" async></script>
       </Head>
       <div className="custom-nav fixed top-0 left-0 flex justify-between items-center w-full z-10 p-[10%] py-4 text-[#eff6ee]">
-        <a href="/" className="font-semibold text-[#fff]">
+        <Link href="/" className="font-semibold text-[#fff]">
           James V.
-        </a>
+        </Link>
         <nav className="flex">
           <div
             className="custom-nav-item hover:text-[#5761ec] cursor-pointer text-xs sm:text-sm md:text-md font-medium"
@@ -117,10 +122,10 @@ export default function Home() {
         <div className="my-auto">
           <div className="mb-5">
             <h1 className="text-md sm:text-lg md:text-xl hero-text mb-2">
-              I'm James Virtudazo.
+              I&lsquo;m James Virtudazo.
             </h1>
             <h3 className="text-2xl md:text-2xl lg:text-4xl font-bold">
-              I'm a{" "}
+              I&lsquo;m a{" "}
               <span className="text-[#5761ec]">Full Stack Web Developer.</span>
             </h3>
           </div>
@@ -161,11 +166,11 @@ export default function Home() {
                 About
               </h1>
               <h3 className="text-xs sm:text-sm md:text-md font-medium">
-                I'm an Engineering Student with a passion for creating solutions
-                using both hardware and software. I'm a self-taught Programmer
-                and Full Stack Web Developer experienced in various
-                technologies. I create and maintain software for schools and
-                small businesses.
+                I&lsquo;m an Engineering Student with a passion for creating
+                solutions using both hardware and software. I&lsquo;m a
+                self-taught Programmer and Full Stack Web Developer experienced
+                in various technologies. I create and maintain software for
+                schools and small businesses.
               </h3>
             </div>
           </div>
