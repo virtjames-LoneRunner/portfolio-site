@@ -2,10 +2,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #eff6ee;
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -15,7 +14,7 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -23,4 +22,123 @@ a {
     color: white;
     background: black;
   }
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.main-container section {
+  /* @apply flex justify-center items-center; */
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.custom-nav {
+  background-color: transparent;
+  opacity: 0;
+  /* color: black; */
+  transition: all 500ms ease-in;
+}
+
+.custom-nav-item {
+  margin-right: 2rem;
+}
+
+.hero-text {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.cover-one {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hide {
+  /* background-color: black; */
+  /* overflow: hidden; */
+}
+
+.hide span {
+  /* transform: translateY(100%); */
+  opacity: 0;
+  display: inline-block;
+}
+
+.projects {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* .project {
+  height: 100%;
+  width: 10vw;
+} */
+
+.cover-two {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+}
+
+.progress-section {
+  position: fixed;
+  top: 25%;
+  right: 4px;
+  width: 10px;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  will-change: transform;
+  transition: 0.3s ease-out;
+  opacity: 0;
+}
+
+.progress-bar-wrap {
+  position: relative;
+  width: 5px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  overflow: hidden;
+  /* background-color: white; */
+}
+.progress-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #5761ec;
+}
+
+.main-container::-webkit-scrollbar {
+  display: none;
+}
+
+.back-to-top {
+  display: none;
+  opacity: 0;
+  transition: all 500ms ease-in;
+}
+
+.technology {
+  @apply flex justify-center items-center p-1 lg:p-4 hover:scale-110 transition-all duration-500 shadow-inner shadow-white rounded-md;
+}
+
+.socials {
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(300%);
 }
