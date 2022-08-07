@@ -75,18 +75,7 @@ export default function Home() {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Fira+Sans&display=optional"
         ></link>
-        {/* <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
-          integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
-          async
-        ></script> */}
 
-        {/* <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
-          async
-        ></script> */}
         <script src="/js/progressBar.js"></script>
       </Head>
       <div className="custom-nav fixed top-0 left-0 flex justify-between items-center w-full z-10 p-[10%] py-4 text-[#eff6ee]">
