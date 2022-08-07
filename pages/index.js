@@ -9,6 +9,8 @@ import { projects } from "../data/data";
 import Technologies from "../components/Technologies";
 import Link from "next/link";
 
+// Rebuild for custom domain
+
 export default function Home() {
   useEffect(() => {
     const gsap = window.gsap;
